@@ -11068,8 +11068,8 @@ header.masthead2 {
 }/*add*/
 
 header.masthead3 {
-  padding-top: 10rem;
-  padding-bottom: calc(10rem - 4.5rem);
+  padding-top: 20rem;
+  padding-bottom: calc(15rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/ABOUT\ US.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -11126,9 +11126,6 @@ header.masthead2 h1, header.masthead2 .h1 {
 /*end add*/
 
 /*start add*/
-header.masthead3 h1, header.masthead3 .h1 {
-  font-size: 2.25rem;
-}
 @media (min-width: 992px) {
   header.masthead3 {
     height: 100vh;
@@ -11136,16 +11133,16 @@ header.masthead3 h1, header.masthead3 .h1 {
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.masthead3 p {
-    font-size: 1.15rem;
-  }
-  header.masthead3 h1, header.masthead3 .h1 {
-    font-size: 3rem;
-  }
 }
-@media (min-width: 1200px) {
-  header.masthead3 h1, header.masthead3 .h1 {
-    font-size: 3.5rem;
+@media (max-width: 426px) {
+  header.masthead3 {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/ABOUT\ US__.PNG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 15rem;
+    padding-bottom: 0rem;
   }
 }
 /*end add 12/07/2023*/
