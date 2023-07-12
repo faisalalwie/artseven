@@ -11067,6 +11067,16 @@ header.masthead2 {
   background-size: cover;
 }/*add*/
 
+header.masthead3 {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/ABOUT\ US.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}/*add - 12/07/2023 */
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
@@ -11114,6 +11124,31 @@ header.masthead2 h1, header.masthead2 .h1 {
   }
 }
 /*end add*/
+
+/*start add*/
+header.masthead3 h1, header.masthead3 .h1 {
+  font-size: 2.25rem;
+}
+@media (min-width: 992px) {
+  header.masthead3 {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+  header.masthead3 p {
+    font-size: 1.15rem;
+  }
+  header.masthead3 h1, header.masthead3 .h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1200px) {
+  header.masthead3 h1, header.masthead3 .h1 {
+    font-size: 3.5rem;
+  }
+}
+/*end add 12/07/2023*/
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
