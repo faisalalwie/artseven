@@ -11067,6 +11067,7 @@ header.masthead2 {
   background-size: cover;
 }/*add*/
 
+/*masthead about us page*/
 header.masthead3 {
   padding-top: 20rem;
   padding-bottom: calc(15rem - 4.5rem);
@@ -11077,10 +11078,22 @@ header.masthead3 {
   background-size: cover;
 }/*add - 12/07/2023 */
 
+/*masthead contact us page*/
 header.masthead4 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/CONTACT\ US.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}/*add - 14/07/2023 */
+
+/*masthead blog page*/
+header.masthead5 {
+  padding-top: 20rem;
+  padding-bottom: calc(15rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.5) 100%), url("../assets/img/VR\ WEB_.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11192,6 +11205,27 @@ header.masthead4 h1, header.masthead4 .h1 {
   }
 }
 /*end add 14/07/2023*/
+
+/*start add*/
+@media (min-width: 992px) {
+  header.masthead5 {
+    height: 130vh;
+    min-height: 40rem;
+    padding-top: 0rem;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 426px) {
+  header.masthead5 {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/VR\ WEB__.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 20rem;
+    padding-bottom: 0rem;
+  }
+}/*end add 14/07/2023*/
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
