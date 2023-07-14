@@ -11081,7 +11081,7 @@ header.masthead4 {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/CONTACT\ US.jpg");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -11173,6 +11173,17 @@ header.masthead4 h1, header.masthead4 .h1 {
   }
   header.masthead4 h1, header.masthead4 .h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 426px) {
+  header.masthead4 {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/CONTACT\ US.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 10rem;
+    padding-bottom: 0rem;
   }
 }
 @media (min-width: 1200px) {
