@@ -17,6 +17,63 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            /* The Modal (background) */
+            .modalb {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.800);
+            }
+
+            /* Modal Content */
+            .modal-contentb {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            max-width: 1100px;
+            }
+
+            /* The Close Button*/
+            .closeb {
+            color: white;
+            position: fixed;
+            top: 10px;
+            right: 50px;
+            font-size: 35px;
+            font-weight: bold;
+            }
+
+            .closeb:hover,
+            .closeb:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+            .cursor {
+            cursor: pointer;
+            }
+
+            .demo, .demo1 {
+                margin-bottom: 1rem;
+                box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+            }
+            .demo1 {
+                margin-top: 0.7rem;
+            }
+
+        </style>
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -26,7 +83,7 @@
                     <span><img src="assets/LOGO-ART-SEVEN.ico" alt="" ></span>
                         ARTSEVEN 
                     <span style="font-size: small;">GROUP SDN BHD</span>
-                </a>                
+                </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -53,275 +110,62 @@
             </div>
         </header>
 
-    <section class="page-section" id="portfolio">
-
-        <!-- Portfolio 1-->
-        <h2 class="text-center mt-0"><b>SURAU AL-FALAH</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Ulu Yam Bharu, Selangor</p>
-
-        <div id="portfolio1">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Falah/1.jpg" title="Masjid Al-Falah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Falah/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+        <!-- Catalogue-->
+        <section class="pt-1 pb-5" id="catalogue">
+            <h2 class="text-center mt-4">Project</h2>
+            <hr class="divider" />
+            <div class="mt-5"></div>
+            <!--THUMBNAIL-->
+            <div id="portfolio">
+                <div class="container-fluid p-0 mb-4">
+                    <div class="row g-0">
+                        <!--MASJID-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="portfolio-box cursor" onclick="openPage(1);">
+                                <img class="img-thumbnail2" src="assets/img/catalogue/thumbnail/arabic.jpg"/>
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Click Here</div>
+                                    <div class="project-name">Masjid</div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Falah/2.jpeg" title="Masjid Al-Falah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Falah/2.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                        </div>
+                        <!--SURAU-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="portfolio-box cursor" onclick="openPage(2);">
+                                <img class="img-thumbnail2" src="assets/img/catalogue/thumbnail/modern.jpg" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Click Here</div>
+                                    <div class="project-name">Surau</div>
+                                </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Falah/3.jpeg" title="Masjid Al-Falah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Falah/3.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                        </div>
+                        <!--KEDIAMAN-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="portfolio-box cursor" onclick="openPage(3);">
+                                <img class="img-thumbnail2" src="assets/img/catalogue/thumbnail/contemporary.jpg" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Click Here</div>
+                                    <div class="project-name">Kediaman</div>
+                                </div>
                             </div>
-                        </a>
+                        </div>
+                        <!--PREMIS-->
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="portfolio-box cursor" onclick="openPage(4);">
+                                <img class="img-thumbnail2" src="assets/img/catalogue/thumbnail/traditional.jpg" />
+                                <div class="portfolio-box-caption">
+                                    <div class="project-category text-white-50">Click Here</div>
+                                    <div class="project-name">Premis</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         
-
-        <!-- Portfolio 2-->
-        <h2 class="text-center mt-8"><b>MASJID AL-MUTTAQIN</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Wangsa Malawati, Kuala Lumpur</p>
-
-        <div id="portfolio2">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/1.jpg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/2.jpg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/3.jpg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/4.jpg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/5.jpg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Al-Muttaqin/6.jpeg" title="Masjid Al-Muttaqin">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Al-Muttaqin/6.jpeg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Project 3-->
-        <h2 class="text-center mt-8"><b>MASJID GEMENCHEH</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Tampin, Negeri Sembilan</p>
-
-        <div id="portfolio3">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Gemencheh/1.jpeg" title="Masjid Gemencheh">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Gemencheh/1.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Gemencheh/2.jpeg" title="Masjid Gemencheh">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Gemencheh/2.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Masjid Gemencheh/3.jpeg" title="Masjid Gemencheh">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Masjid Gemencheh/3.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Project 4-->
-        <h2 class="text-center mt-8"><b>SURAU AL-FURQAN</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Selangor</p>
-
-        <div id="portfolio4">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Furqan/1.jpg" title="Surau Al-Furqan">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Furqan/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Furqan/2.jpg" title="Surau Al-Furqan">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Furqan/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Furqan/3.jpg" title="Surau Al-Furqan">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Furqan/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Project 5-->
-        <h2 class="text-center mt-8"><b>SURAU AL-HAQ</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Klang, Selangor</p>
-
-        <div id="portfolio5">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/1.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/1.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/2.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/2.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/3.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/3.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/4.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/4.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/5.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/5.jpg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Haq/6.jpg" title="Surau Al-Haq">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Haq/6.jpg" alt="..." />
-                            <div class="portfolio-box-caption p-3">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--Project 6-->
-        <h2 class="text-center mt-8"><b>SURAU AL-JANNAH</b></h2>
-        <hr class="divider" />
-        <p class=" col text-center mt-2 mb-4">Shah Alam, Selangor</p>
-
-        <div id="portfolio6">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Jannah/1.jpeg" title="Surau Al-Jannah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Jannah/1.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Jannah/2.jpeg" title="Surau Al-Jannah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Jannah/2.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/Surau Al-Jannah/3.jpeg" title="Surau Al-Jannah">
-                            <img class="img-thumbnail2" src="assets/img/portfolio/thumbnails/Surau Al-Jannah/3.jpeg" alt="..." />
-                            <div class="portfolio-box-caption">
-                                <i class="bi-zoom-in fs-1 text-white-75"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
+    
         <!--CALL TO ACTION-->
         <div id="footer">
             <footer class="bg-footer py-1">
@@ -345,5 +189,22 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            function openPage(n) {
+              if (n == 1) {
+                window.location = 'masjid.html';
+              }
+              else if (n == 2) {
+                window.location = 'surau.html';
+              }
+              else if (n == 3) {
+                window.location = 'kediaman.html';
+              }
+              else if (n == 4) {
+                window.location = 'premis.html';
+              }
+            }
+        </script>
+
     </body>
 </html>
