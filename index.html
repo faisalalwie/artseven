@@ -386,19 +386,13 @@
             const popupOverlay = document.querySelector(".popup-overlay");
             const closeButton = document.querySelector(".popup-container .closebutton");
 
-            const createPopupCookie = () => {
-                let ex
-                document.cookie = `popupCookie=true; ${expires}; path=/;`
-            }
-
             closeButton.addEventListener("click", () => {
                 //popupOverlay.classList.remove("active");
                 popupOverlay.style.display = 'none';
-                createPopupCookie(0)
             })
 
             window.addEventListener("scroll", () => {
-                if (window.scrollY > 100) {
+                if (window.scrollY > 0) {
                     popupOverlay.classList.add("active");
                 }
             })
