@@ -19,6 +19,59 @@
         <link href="css/styles.css" rel="stylesheet" />
 
         <style>
+            /* The Modal (background) 
+            .modalb {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            padding-top: 0px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.800);
+            }
+
+            /* Modal Content 
+            .modal-contentb {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            margin: auto;
+            padding: 0;
+            width: 100%;
+            max-width: 1100px;
+            }*/
+
+            /* The Close Button*/
+            .closeb {
+            color: white;
+            position: fixed;
+            top: 10px;
+            right: 50px;
+            font-size: 35px;
+            font-weight: bold;
+            }
+
+            .closeb:hover,
+            .closeb:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+            }
+
+            .cursor {
+            cursor: pointer;
+            }
+
+            .demo, .demo1 {
+                margin-bottom: 1rem;
+                box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+            }
+            .demo1 {
+                margin-top: 0.7rem;
+            }
+
             /*Popup*/
             .popup-overlay{
                 background: rgba(0, 0, 0, 0.6);
@@ -88,6 +141,13 @@
 
             /*SLIDESHOW*/
 
+            /* Slideshow container
+            .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+            }*/
+
             .mySlides {
                 display: none;
             }
@@ -117,6 +177,30 @@
                 box-sizing: border-box;
             }
 
+            /*start add
+            header.mySlides h1, header.mySlides .h1 {
+            font-size: 2.25rem;
+            }
+            @media (min-width: 992px) {
+            header.mySlides {
+                height: 100vh;
+                min-height: 40rem;
+                padding-top: 4.5rem;
+                padding-bottom: 0;
+            }
+            header.mySlides p {
+                font-size: 1.15rem;
+            }
+            header.mySlides h1, header.mySlides .h1 {
+                font-size: 3rem;
+            }
+            
+            /*@media (min-width: 1200px) {
+                header.mySlides h1, header.mySlides .h1 {
+                    font-size: 3.5rem;
+                }
+            }*/
+
             .overlay::before {
             content: '';
             z-index: 10;
@@ -141,7 +225,8 @@
         </style>
 
     </head>
-    <!-- Google tag (gtag.js) -->
+
+        <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHBLEK7W2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -177,6 +262,7 @@
         <!-- Masthead-->
         <header>
             <div class="slideshow-container">
+                  
                 <figure class="overlay">
                     <div class="mySlides fade">
                         <img src="assets/img/Slideshow/1.JPG" style="width:100%">
@@ -193,24 +279,34 @@
                     <div class="mySlides fade">
                         <img src="assets/img/Slideshow/5.JPG" style="width:100%">
                     </div>
-                    <div class="centered"><p style="color: #ffffffd0; margin-bottom: 0.1rem;">Welcome to ArtSeven Sdn Bhd.</p>
+                    <div class="centered"><p style="color: #ffffffd0; margin-bottom: 0.1rem; font-size: 20px;">Assalamualaikum, Thank you for Visiting ArtSeven Sdn Bhd.</p>
                         <br>
                         <h1>A Trusted Islamic Decoration
-                        Service Provider that Specialized
-                        in Innovation Prayer Room as
-                        Clients Expectation to Build
-                        Integrated Ummah</h1>
+                        Service Provider</h1>
                         <p style="color: #ffffffd0; margin-bottom: 1.2rem;">
-                        As a decoration service provider, we prioritize trustworthiness and delivering proven results while consistently meeting our clients' needs in an effective and efficient manner.
-                        Our approach involves consulting with clients to transform their vision into reality, offering the best solutions every step of the way. 
-                        Additionally, we aim to realize innovation in the development of Modern Islamic Art, fostering unity within the ummah and raising our country's reputation on the global stage.
+                        ArtSeven has made a significant impact in the Malaysian market by combining traditional Islamic art with contemporary design features to produce visually beautiful and spiritually edifying spaces.
+                        
                         </p>
-                    </div>
+                        </div>
                 </figure>
             </div>
+
+            <!--<div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+
+                <img style="width: 35%; height: auto" src="assets/img/LOGO-ART-SEVEN-CROP.png" alt="logo" />
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold" style="font-family:times new roman;"><Span style="color: #EF4130;">ART</Span> SEVEN</h1>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5" style="font-family:Calibri;">Your Dream, Our Vision</p>
+                    </div>
+                </div>
+            </div>-->
         </header>
 
-        <!-- Services-->
+
+        <!-- Services
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
                 <h2 class="text-center mt-0">Our Service</h2>
@@ -232,8 +328,98 @@
                     </div>
                 </div>
             </div>
+        </section>-->
+
+         <!-- Know us better-->
+         <section class="page-section2" id="services">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">Know Us Better</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-6 col-md-12 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"></div>
+                            <img style="width: 100%;" src="assets/img/home1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="mt-8">
+                            <div class="mb-2"></div>
+                            <h3 class="h2 mb-4" style="line-height: 1.5;"><b><span style="color: #C62127">A Trusted Islamic Decoration Service Provider </span> that Specialized in Innovation Prayer Room as Clients Expectation to Build Integrated Ummah</b></h3>
+                            <p class="mb-0" style="line-height: 2;"> ARTSEVEN Group Sdn Bhd, originally I.D.F.A World Services, is a
+                                well-known Bumiputera firm headquartered in the lively city of
+                                Shah Alam, Selangor. ARTSEVEN Group provides professional
+                                consulting for a wide range of projects, including residential,
+                                commercial, private, and public structures. Founded and
+                                officially incorporated on 23rd June 2019</p>
+                            <!--<a href="about_us.html" style="padding: 0.5rem;" type="button" role="button" aria-pressed="true">Know About Us!</a>-->
+                            <a href="about_us.html" class="btn btn-danger mt-3">Know More About us!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
+
+        <!-- Services-->
+        <section class="page-section2" id="services">
+            <div class="container px-4 px-lg-5 mb-5">
+                <h2 class="text-center mt-0">Field of Expertise</h2>
+                <hr class="divider" />
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <div class="mt-3">
+                            <h3 class="h3 mb-2"><b>ARTSEVEN represents a diverse ambition
+                                to thrive in the field of Islamic decorative
+                                services</b></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/divider.jpg">
+                        <h3 class="mt-3"><b>Divider</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/mimbar.jpg">
+                        <h3 class="mt-3"><b>Mimbar</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/mihrab.jpg">
+                        <h3 class="mt-3"><b>Mihrab</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/signage.jpg">
+                        <h3 class="mt-3"><b>Signage</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/facade.jpg">
+                        <h3 class="mt-3"><b>Facade</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/meja kuliah.jpg">
+                        <h3 class="mt-3"><b>Meja Kuliah</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/kediaman.jpg">
+                        <h3 class="mt-3"><b>Kediaman</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/masjid.jpg">
+                        <h3 class="mt-3"><b>Masjid</b></h3>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mt-5 text-center">
+                        <img style="width: 90%; border-radius: 25px;" src="assets/img/service/surau.jpg">
+                        <h3 class="mt-3"><b>Surau</b></h3>
+                    </div>
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <div class="mt-5">
+                            <h5 class="mb-2" style="line-height: 1.5;">Artseven also extends its expertise to creating furniture such as custome prayer benches,
+                                 intricately carved wooden tables, decorative shelving units, and carpets.</h5>
+                        </div>
+                        <a href="project.html" class="btn btn-danger mt-3">To our project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!--CALL TO ACTION-->
         <div id="footer">
             <footer class="bg-footer py-1">
@@ -250,6 +436,7 @@
             </footer>
         </div>
 
+        <center>
         <!--POPUP-->
         <div class="popup-overlay">
             <div class="popup-container" >
@@ -257,6 +444,7 @@
                 <div class="closebutton">Close</div>
             </div>
         </div>
+        </center>
         
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -265,20 +453,60 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+        <!--
+        <script>
+            function openModal(n) {
+              if (n == 1) {
+                document.getElementById("myModal").style.display = "block";
+              }
+              else if (n == 2) {
+                document.getElementById("myModal2").style.display = "block";
+              }
+              else if (n == 3) {
+                document.getElementById("myModal3").style.display = "block";
+              }
+              else if (n == 4) {
+                document.getElementById("myModal4").style.display = "block";
+              }
+            }
+            function closeModal(n) {
+              if (n == 1){
+                document.getElementById("myModal").style.display = "none";
+              }
+              else if (n == 2) {
+                document.getElementById("myModal2").style.display = "none";
+              }
+              else if (n == 3) {
+                document.getElementById("myModal3").style.display = "none";
+              }
+              else if (n == 4) {
+                document.getElementById("myModal4").style.display = "none";
+              }
+            }
+        </script>
+        -->
 
         <!--POPUP-->
         <script>
             const popupOverlay = document.querySelector(".popup-overlay");
             const closeButton = document.querySelector(".popup-container .closebutton");
 
+            const createPopupCookie = () => {
+                let ex
+                document.cookie = `popupCookie=true; ${expires}; path=/;`
+            }
+
             closeButton.addEventListener("click", () => {
                 //popupOverlay.classList.remove("active");
                 popupOverlay.style.display = 'none';
+                createPopupCookie(0)
             })
 
             window.addEventListener("scroll", () => {
                 if (window.scrollY > 0) {
                     popupOverlay.classList.add("active");
+                    //popupOverlay.style.display = 'block';
                 }
             })
         </script>
@@ -299,7 +527,7 @@
                 slideIndex = 1
               }    
               slides[slideIndex-1].style.display = "block";  
-              setTimeout(showSlides, 3000); // Change image every 3 seconds
+              setTimeout(showSlides, 3000); // Change image every 2 seconds
             }
         </script>
 
