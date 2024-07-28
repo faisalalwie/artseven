@@ -19,7 +19,7 @@
         <link href="css/styles.css" rel="stylesheet" />
 
         <style>
-            /* The Modal (background) */
+            /* The Modal (background)*/
             .modalb {
             display: none;
             position: fixed;
@@ -33,7 +33,7 @@
             background-color: rgba(0, 0, 0, 0.800);
             }
 
-            /* Modal Content */
+            /* Modal Content*/
             .modal-contentb {
             position: relative;
             background-color: rgba(0, 0, 0, 0);
@@ -72,20 +72,49 @@
                 margin-top: 0.7rem;
             }
 
+            .portfolio-box{
+                margin:auto;
+            }
+
+            /* Style the tab */
+            .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            }
+
+            /* Style the buttons inside the tab */
+            .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            }
+
+            /* Change background color of buttons on hover */
+            .tab button:hover {
+            background-color: #ddd;
+            }
+
+            /* Create an active/current tablink class */
+            .tab button.active {
+            background-color: #ccc;
+            }
+
+            /* Style the tab content */
+            .tabcontent {
+            display: none;
+            padding: 12px 12px;
+
+            border-top: none;
+            }
         </style>
 
     </head>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHBLEK7W2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-6HHBLEK7W2');
-    </script>
-    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -101,7 +130,7 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
                         <li class="nav-item"><a class="nav-link active" href="project.html">Project</a></li>
-                        <!--<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>-->
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="company_profile.html">Company Profile</a></li> <!--add-->
                         <li class="nav-item"><a class="nav-link" href="contact_us.html">Contact us</a></li>
                     </ul>
@@ -120,52 +149,372 @@
                 </div>
             </div>
         </header>
+        
+         <!-- Google tag (gtag.js) -->
+            /* Change background color of buttons on hover */
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHBLEK7W2"></script>
+            .tab button:hover {
+    <script>
+            background-color: #ddd;
+      window.dataLayer = window.dataLayer || [];
+            }
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        <!-- Catalogue-->
-        <section class="pt-1 pb-5" id="catalogue">
-            <h2 class="text-center mt-8">Project</h2>
-            <hr class="divider" />
-            <div class="mt-5"></div>
-            <!--THUMBNAIL-->
-            <div id="portfolio">
-                <div class="container-fluid p-0 mb-4">
-                    <div class="row g-0">
-                        <!--MASJID-->
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="portfolio-box cursor" onclick="openPage(1);">
-                                <img class="img-thumbnail4" src="assets/img/profile/thumbnail/Masjid.PNG"/>
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50"></div>
-                                    <div class="project-name"></div>
+        <!-- Project-->
+        <section class="page-section" id="services">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-12 col-md-12 text-center">
+                        <div class="mt-4">
+                            <h2 class="mb-2">Let Our <span style="color: #C62127;">Creation</span> Inspired Your Next Space</h3>
+                        </div>
+
+                        <div class="tab mt-5">
+                            <button class="tablinks active" onclick="openProject(event, 'Masjid')">Masjid</button>
+                            <button class="tablinks" onclick="openProject(event, 'Surau')">Surau</button>
+                            <button class="tablinks" onclick="openProject(event, 'Premis')">Premis</button>
+                            <button class="tablinks" onclick="openProject(event, 'Kediaman')">Kediaman</button>
+                        </div>
+                        
+                        <section id="portfolio">
+                        
+                        <div id="Masjid" class="tabcontent" style="display: block;" >
+                        <h3 class="mb-5 mt-4">Masjid</h3>
+                        <div id="masjid">
+                            <div class="container-fluid p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/1.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/1.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/2.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/2.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/3.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/3.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/4.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/4.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/5.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/5.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/6.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/6.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/7.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/7.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/8.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/8.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/9.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/9.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/10.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/10.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/11.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/11.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/12.jpeg " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/12.jpeg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/13.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/13.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/14.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/14.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/15.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/15.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/16.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/16.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                        <a class="portfolio-box" href="assets/img/profile/masjid/17.JPG " title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/masjid/17.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!--SURAU-->
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="portfolio-box cursor" onclick="openPage(2);">
-                                <img class="img-thumbnail4" src="assets/img/profile/thumbnail/Surau.PNG" />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50"></div>
-                                    <div class="project-name"></div>
+                        </div>
+
+                        <div id="Surau" class="tabcontent">
+                        <h3 class="mb-5 mt-4">Surau</h3>
+                        <div id="surau">
+                            <div class="container-fluid p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/1.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/1.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/2.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/2.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/3.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/3.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/4.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/4.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/5.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/5.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/6.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/6.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/7.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/7.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/8.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/8.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/9.jpeg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/9.jpeg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/10.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/10.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/surau/11.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/surau/11.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!--PREMIS-->
-                        <div class="col-lg-6 col-sm-12">
-                            <div class="portfolio-box cursor" onclick="openPage(4);">
-                                <img class="img-thumbnail4" src="assets/img/profile/thumbnail/Premis.PNG" />
-                                <div class="portfolio-box-caption">
-                                    <div class="project-category text-white-50"></div>
-                                    <div class="project-name"></div>
+                        </div>
+                        
+                        <div id="Premis" class="tabcontent">
+                        <h3 class="mb-5 mt-4">Premis</h3>
+                        <div id="Premis">
+                            <div class="container-fluid p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/premis/1.jpg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/premis/1.jpg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/premis/2.jpg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/premis/2.jpg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/premis/3.jpg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/premis/3.jpg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/premis/4.jpg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/premis/4.jpg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/premis/5.jpg" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/premis/5.jpg" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+
+                        <div id="Kediaman" class="tabcontent">
+                        <h3 class="mb-5 mt-4">Kediaman</h3>
+                        <div id="kediaman">
+                            <div class="container-fluid p-0">
+                                <div class="row g-4">
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/kediaman/1.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/kediaman/1.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/kediaman/2.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/kediaman/2.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-12 ">
+                                        <a class="portfolio-box" href="assets/img/profile/kediaman/3.JPG" title="">
+                                            <img class="img-thumbnail2" src="assets/img/profile/kediaman/3.JPG" alt="..." />
+                                            <div class="portfolio-box-caption">
+                                                <i class="bi-zoom-in fs-1 text-white-75"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        </section>
                     </div>
                 </div>
             </div>
         </section>
 
         
+    
         <!--CALL TO ACTION-->
         <div id="footer">
             <footer class="bg-footer py-1">
@@ -189,20 +538,20 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--Tab-->
         <script>
-            function openPage(n) {
-              if (n == 1) {
-                window.location = 'masjid.html';
+            function openProject(evt, projectName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
               }
-              else if (n == 2) {
-                window.location = 'surau.html';
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
               }
-              else if (n == 3) {
-                window.location = 'kediaman.html';
-              }
-              else if (n == 4) {
-                window.location = 'premis.html';
-              }
+              document.getElementById(projectName).style.display = "block";
+              evt.currentTarget.className += " active";
             }
         </script>
 
