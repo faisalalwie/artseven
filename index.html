@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>ARTSEVEN | HOME</title>
+        <title>PAKAR HIAS MIHRAB</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/LOGO-ART-SEVEN-CROP.ico" />
         <!-- Bootstrap Icons-->
@@ -119,8 +119,13 @@
             .mySlides {
                 display: none;
             }
+            
             img {
                 vertical-align: middle;
+            }
+
+            .imgslide{
+                width: 100%;
             }
 
             .slideshow-container{
@@ -156,14 +161,69 @@
             background-size: cover;
             }
 
-            .centered {
-            z-index: 50;
-            position: absolute;
-            top: 35%;
-            left: 35%;
-            right: 20%;
-            transform: translate(-50%, -50%);
-            color: #ffffffd0;
+            /*PC*/
+            @media (max-width: 2560px) {
+                .centered {
+                z-index: 50;
+                position: absolute;
+                top: 35%;
+                left: 35%;
+                right: 20%;
+                transform: translate(-50%, -50%);
+                color: #ffffffd0;
+                }
+            }
+            /*Laptop*/
+            @media (max-width:1024px) {
+                .centered {
+                z-index: 50;
+                position: absolute;
+                top: 45%;
+                left: 38%;
+                right: 5%;
+                transform: translate(-50%, -50%);
+                color: #ffffffd0;
+                }
+            }
+            /*Tab*/
+            @media (max-width: 768px) {
+                .centered {
+                z-index: 50;
+                position: absolute;
+                top: 50%;
+                left: 40%;
+                right: 0%;
+                transform: translate(-50%, -50%);
+                color: #ffffffd0;
+                }
+            }
+            /*Phone*/
+            @media (max-width: 680px) {
+                .centered {
+                z-index: 50;
+                position: absolute;
+                top: 55%;
+                left: 30%;
+                right: 0%;
+                transform: translate(-30%, -50%);
+                color: #ffffffd0;
+                }
+            }
+            /*Phonee*/
+            @media (max-width: 570px) {
+                .centered {
+                z-index: 50;
+                position: absolute;
+                top: 50%;
+                left: 30%;
+                right: 0%;
+                transform: translate(-30%, -50%);
+                color: #ffffffd0;
+                }
+                .imgslide{
+                    width:200%;
+                    margin: 0 0 0 -100%;
+                }
             }
             
         </style>
@@ -209,25 +269,25 @@
                   
                 <figure class="overlay">
                     <div class="mySlides fade">
-                        <img src="assets/img/Slideshow/1.JPG" style="width:100%">
+                        <img class="imgslide" src="assets/img/Slideshow/1.JPG">
                     </div>
                     <div class="mySlides fade">
-                        <img src="assets/img/Slideshow/2.jpg" style="width:100%">
+                        <img class="imgslide" src="assets/img/Slideshow/2.jpg">
                     </div>
                     <div class="mySlides fade">
-                        <img src="assets/img/Slideshow/3.JPG" style="width:100%">
+                        <img class="imgslide" src="assets/img/Slideshow/3.JPG">
                     </div>
                     <div class="mySlides fade">
-                        <img src="assets/img/Slideshow/4.JPG" style="width:100%">
+                        <img class="imgslide" src="assets/img/Slideshow/4.JPG">
                     </div>
                     <div class="mySlides fade">
-                        <img src="assets/img/Slideshow/5.JPG" style="width:100%">
+                        <img class="imgslide" src="assets/img/Slideshow/5.JPG">
                     </div>
-                    <div class="centered"><p style="color: #ffffffd0; margin-bottom: 0.1rem; font-size: 20px;">Assalamualaikum, Thank You For Visiting ArtSeven Sdn Bhd.</p>
+                    <div class="centered"><p style="color: #ffffffd0; padding-bottom: 0.1rem; font-size: 20px;">Assalamualaikum, Thank You For Visiting ArtSeven Sdn Bhd.</p>
                         <br>
                         <h1>A Trusted Islamic Decoration
                         Service Provider</h1>
-                        <p style="color: #ffffffd0; margin-bottom: 1.2rem;">
+                        <p style="color: #ffffffd0; padding-bottom: 1.2rem;">
                         ARTSEVEN has made a significant impact in the Malaysian market by combining traditional Islamic art with contemporary design features to produce visually beautiful and spiritually edifying spaces.
                         
                         </p>
