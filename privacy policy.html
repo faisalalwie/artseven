@@ -19,11 +19,21 @@
         <link href="css/styles.css" rel="stylesheet" />
 
         <style>
-            .m1 {
-            margin: 0px 30px 0px 30px;
+            @media (max-width: 2560px) {
+                .m1 {
+                margin: 0px 30px 0px 30px;
+                }
+                .bgprivacy{
+                padding: 3rem 5rem 3rem 5rem;
+                }
             }
-            .m2 {
-            margin: 0px 60px 0px 60px;
+            @media (max-width: 580px) {
+                .m1 {
+                margin: 0px 20px 0px 20px;
+                }
+                .bgprivacy{
+                padding:  2rem 3rem 2rem 3rem;
+                }
             }
         </style>
     </head>
@@ -59,7 +69,7 @@
                 <hr class="divider" />
 
                 <div class="row gx-4 g-lg-5" >
-                    <div class="col-lg-12 col-md-12" style="background-color: white; padding: 3rem 5rem 3rem 5rem;">
+                    <div class="col-lg-12 col-md-12 bgprivacy" style="background-color: white;">
                         <div class="mt-4">
                             <p class="mb-4" align="justify">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
                             </br></br> We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. </p>
