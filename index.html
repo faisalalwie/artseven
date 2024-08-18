@@ -265,7 +265,7 @@
 
         <!-- Masthead-->
         <header>
-            <div class="slideshow-container">
+            <div class="slideshow-container fade-in-element">
                   
                 <figure class="overlay">
                     <div class="mySlides fade">
@@ -298,7 +298,7 @@
 
          <!-- Know us better-->
          <section class="page-section2" id="services">
-            <div class="container px-4 px-lg-5">
+            <div class="container fade-in-element2 px-4 px-lg-5">
                 <h2 class="text-center mt-0">Know Us Better</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -328,7 +328,7 @@
 
         <!-- Services-->
         <section class="page-section2" id="services">
-            <div class="container px-4 px-lg-5 mb-4">
+            <div class="container fade-in-element2 px-4 px-lg-5 mb-4">
                 <h2 class="text-center mt-0">Field of Expertise</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -388,7 +388,7 @@
 
         <!-- Vr section-->
         <section class="page-section2" id="vr">
-            <div class="container px-4 px-lg-5">
+            <div class="container fade-in-element2 px-4 px-lg-5">
                 <h2 class="text-center mt-0">Virtual Reality</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -406,7 +406,7 @@
 
         <!-- Our Clients-->
         <section class="page-section2" id="clients">
-            <div class="container px-4 px-lg-5">
+            <div class="container fade-in-element2 px-4 px-lg-5">
                 <h2 class="text-center mt-0">Our Clients</h2>
                 <hr class="divider" />
 
@@ -585,6 +585,23 @@
               }    
               slides[slideIndex-1].style.display = "block";  
               setTimeout(showSlides, 3000); // Change image every 2 seconds
+            }
+        </script>
+        <!--script transition-->
+        <script>
+            const intersectionCallback = (entries) => {
+            for (const entry of entries) { 
+                if (entry.isIntersecting) { 
+                entry.target.classList.add('show'); 
+                }
+            }
+            }
+
+            const observer = new IntersectionObserver(intersectionCallback);
+
+            const items = document.querySelectorAll('.fade-in-element, .fade-in-element2');
+            for (const item of items) {
+            observer.observe(item);
             }
         </script>
 
