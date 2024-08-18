@@ -59,7 +59,7 @@
         </nav>
 
         <!-- Masthead-->
-        <header class="masthead2">
+        <header class="masthead2 fade-in-element">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-center">
@@ -119,5 +119,21 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--Script transition-->
+        <script>
+            const intersectionCallback = (entries) => {
+            for (const entry of entries) { 
+                if (entry.isIntersecting) { 
+                entry.target.classList.add('show');
+                }
+            }
+            }
+            const observer = new IntersectionObserver(intersectionCallback);
+
+            const items = document.querySelectorAll('.fade-in-element');
+            for (const item of items) {
+            observer.observe(item);
+            }
+        </script>
     </body>
 </html>
