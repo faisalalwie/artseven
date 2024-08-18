@@ -73,7 +73,7 @@
         </nav>
 
         <!-- Masthead-->
-        <header class="masthead3">
+        <header class="masthead3 fade-in-element">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-center">
@@ -83,7 +83,7 @@
         </header>
 
         <section class="page-section" id="founder">
-            <div class="container px-4 px-lg-5">
+            <div class="container fade-in-element2 px-4 px-lg-5">
                 <h2 class="text-center mt-0">Founder</h2>
                 <hr class="divider" />
                 <div class="row gx-4 gx-lg-5">
@@ -102,7 +102,7 @@
 
         <!--Team-->
         <section class="page-section2" id="team">
-            <div class=" px-4 px-lg-5">
+            <div class="fade-in-element2 px-4 px-lg-5">
                 <h2 class="text-center mt-0">Team</h2>
                 <hr class="divider" />  
             <div class="team">
@@ -324,5 +324,21 @@
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!--Script transition-->
+        <script>
+            const intersectionCallback = (entries) => {
+            for (const entry of entries) { 
+                if (entry.isIntersecting) { 
+                entry.target.classList.add('show');
+                }
+            }
+            }
+            const observer = new IntersectionObserver(intersectionCallback);
+
+            const items = document.querySelectorAll('.fade-in-element, .fade-in-element2');
+            for (const item of items) {
+            observer.observe(item);
+            }
+        </script>
     </body>
 </html>
