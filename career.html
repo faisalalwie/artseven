@@ -78,6 +78,17 @@
 
         </style>
     </head>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HHBLEK7W2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6HHBLEK7W2');
+    </script>
+    
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -124,11 +135,12 @@
                     <div class="row g-0">
 
                         <div class="tab">
-                            <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">SALES CONSULTANT</button>
-                            <button class="tablinks" onclick="openCity(event, 'Paris')">3D DESIGNER</button>
+                            <button class="tablinks" onclick="openTab(event, '1')" id="defaultOpen">SALES CONSULTANT</button>
+                            <button class="tablinks" onclick="openTab(event, '2')">3D DESIGNER</button>
+                            <button class="tablinks" onclick="openTab(event, '3')">INTERNSHIP</button>
                         </div>
                         
-                        <div id="London" class="tabcontent">
+                        <div id="1" class="tabcontent">
                             <h3 class="mt-3 mb-3">SALES CONSULTANT</h3>
                             <div class="mb-3" >
                                 <b>Job Types:</b>
@@ -175,7 +187,7 @@
                             </div>
                         </div>
                         
-                        <div id="Paris" class="tabcontent">
+                        <div id="2" class="tabcontent">
                             <h3 class="mt-3 mb-3">3D DESIGNER</h3>
                                 <div class="mb-3" >
                                     <b>Job Types:</b>
@@ -220,11 +232,13 @@
                                     Send your CV & Resume to <b><a href= "mailto: nurulnadiah.artseven@gmail.com"> nurulnadiah.artseven@gmail.com</a></b> or call <b>011-11846131 (NADIAH)</b> </br>
                                 </div>
                         </div>
-                    
 
-                        <!--<div class="col-lg-12 col-sm-12">
-
-                        </div>-->
+                        <div id="3" class="tabcontent">
+                            <h3 class="mt-3 mb-3">INTERNSHIP</h3>
+                            <div class="mb-3" >
+                                Send your CV & Resume to <b><a href= "mailto: nurulnadiah.artseven@gmail.com"> nurulnadiah.artseven@gmail.com</a></b> or call <b>011-11846131 (NADIAH)</b> </br>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,7 +298,7 @@
         </script>
         <!--tab-->
         <script>
-            function openCity(evt, cityName) {
+            function openTab(evt, jobName) {
               var i, tabcontent, tablinks;
               tabcontent = document.getElementsByClassName("tabcontent");
               for (i = 0; i < tabcontent.length; i++) {
@@ -294,7 +308,7 @@
               for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
               }
-              document.getElementById(cityName).style.display = "block";
+              document.getElementById(jobName).style.display = "block";
               evt.currentTarget.className += " active";
             }
             
