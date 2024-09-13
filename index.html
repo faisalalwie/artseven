@@ -564,7 +564,10 @@
         <!--IRON MAN- ->
         <div class="video-overlay" id="videoOverlay">
             <video id="overlayVideo" autoplay muted playsinline preload="auto">
+                <!--for google etc- ->
                 <source src="assets/img/iron man home.webm" type="video/webm">
+                <!--for safari kepala dia- ->
+                <source src="assets/img/iron man homee.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>-->
@@ -653,6 +656,8 @@
             }
         </script>
 
+        <!--Script Iron Man-->
+
         <script>
             document.addEventListener('DOMContentLoaded', function() {
             const video = document.getElementById('overlayVideo');
@@ -666,16 +671,27 @@
                 overlay.style.display = 'flex'; // Ensure overlay is visible
                 video.play();
 
+                // Set a timeout to hide the overlay if the video doesn't load within 5 seconds
+                const videoTimeout = setTimeout(function() {
+                    overlay.style.display = 'none'; // Hide overlay if video doesn't load in time
+                }, 3000); // 5000ms = 5 seconds
+            
+                // Clear the timeout if the video starts playing
+                video.addEventListener('play', function() {
+                    clearTimeout(videoTimeout); // Cancel the timeout if video plays
+                });
+
                 // When the video ends, hide the overlay and store the flag
                 video.addEventListener('ended', function() {
-                    overlay.classList.add('hidden'); // Fade out effect
-                    sessionStorage.setItem('videoPlayed', 'true'); // Set the flag in localStorage
+                overlay.classList.add('hidden'); // Fade out effect
+                sessionStorage.setItem('videoPlayed', 'true'); // Set the flag in localStorage
                 });
+
             } else {
                 // Hide the overlay immediately if the video has already played
                 overlay.style.display = 'none';
             }
-        });
+            });
         </script>
 
     </body>
