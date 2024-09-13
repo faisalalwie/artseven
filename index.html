@@ -659,7 +659,7 @@
             const overlay = document.getElementById('videoOverlay');
 
             // Check if the video has already played in this session
-            const hasPlayed = localStorage.getItem('videoPlayed');
+            const hasPlayed = sessionStorage.getItem('videoPlayed');
 
             if (!hasPlayed) {
                 // Play the video if it hasn't played before
@@ -669,7 +669,7 @@
                 // When the video ends, hide the overlay and store the flag
                 video.addEventListener('ended', function() {
                     overlay.classList.add('hidden'); // Fade out effect
-                    localStorage.setItem('videoPlayed', 'true'); // Set the flag in localStorage
+                    sessionStorage.setItem('videoPlayed', 'true'); // Set the flag in localStorage
                 });
             } else {
                 // Hide the overlay immediately if the video has already played
