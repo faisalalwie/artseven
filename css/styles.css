@@ -11289,7 +11289,7 @@ header.masthead4 h1, header.masthead4 .h1 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1500; /* Height of the footer */
+  z-index: 900; /* Height of the footer */
   box-shadow: 0 -0.5rem 1rem 0rem rgba(0, 0, 0, 0.15);
 } /*add*/
 
