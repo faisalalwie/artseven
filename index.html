@@ -704,10 +704,7 @@
 
                 // Play MP4 for Safari and WebM for other browsers
                 if (isSafari()) {
-                    video.innerHTML = `
-                        <source src="assets/img/iron man homee.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    `;
+                    overlay.style.display = 'none';
                 } else {
                     video.innerHTML = `
                         <source src="assets/img/iron man home.webm" type="video/webm">
