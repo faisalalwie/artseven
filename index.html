@@ -46,6 +46,37 @@
             }
             /*VIDEO END*/
 
+            /*IRON MAN KECIL*/
+            #ironman-video {
+                position: fixed;
+                bottom: 8px;
+                right: 38px;
+                width: 13vw;
+                height: auto;
+                z-index: 1000; /* Ensure it's above other content */
+            }
+
+            @media (max-width: 770px) {
+                #ironman-video {
+                position: fixed;
+                bottom: 45px;
+                right: 24px;
+                width: 18vw;
+                height: auto;
+                }
+            }
+
+            @media (max-width: 403px) {
+                #ironman-video {
+                position: fixed;
+                bottom: 70px;
+                right: 20px;
+                width: 20vw;
+                height: auto;
+                }
+            }
+            /*IRON MAN KECIL END*/
+            
             @media (max-width: 570px) {
                 body {
                     font-size: 14px;
@@ -565,6 +596,13 @@
         <div class="video-overlay" id="videoOverlay">
             <video id="overlayVideo" autoplay muted playsinline preload="auto">
                 Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!--IRON MAN KECIL-->
+        <div id="ironman-video">
+            <video autoplay loop muted>
+                <source src="assets/img/iron man bersila.webm" type="video/webm">
             </video>
         </div>
 
