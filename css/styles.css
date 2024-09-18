@@ -11293,6 +11293,12 @@ header.masthead4 h1, header.masthead4 .h1 {
   box-shadow: 0 -0.5rem 1rem 0rem rgba(0, 0, 0, 0.15);
 } /*add*/
 
+@media (max-width: 570px) {
+  #footer {
+    font-size: 12px;
+  }
+}
+
 .fade-in-element {
   opacity: 0;
   transition: opacity 500ms ease-out;
