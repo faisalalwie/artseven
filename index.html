@@ -768,5 +768,19 @@
             });
         </script>
 
+        <!--Jangan load Iron Man-->
+        <script>
+        function hideVideoInSafari() {
+          const userAgent = navigator.userAgent;
+          if (userAgent.indexOf("Safari") !== -1) {
+            const video = document.getElementById("ironman-video");
+            video.style.display = "none";
+          }
+        }
+        
+        // Call the function when the page loads
+        window.onload = hideVideoInSafari;
+        </script>
+
     </body>
 </html>
