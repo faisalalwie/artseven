@@ -770,16 +770,15 @@
 
         <!--Jangan load Iron Man-->
         <script>
-        function hideVideoInSafari() {
-          const userAgent = navigator.userAgent;
-          if (userAgent.indexOf("Safari") !== -1) {
-            const video = document.getElementById("ironman-video");
-            video.style.display = "none";
-          }
-        }
-        
-        // Call the function when the page loads
-        window.onload = hideVideoInSafari;
+            function hideVideoInSafari() {
+                const userAgent = navigator.userAgent.toLowerCase();
+                if (userAgent.includes("safari") && !userAgent.includes("chrome")) {
+                    const video = document.getElementById("ironman-video");
+                    video.style.display = "none";
+                }
+            }
+            // Call the function when the HTML content is fully loaded
+            document.addEventListener("DOMContentLoaded", hideVideoInSafari);
         </script>
 
     </body>
