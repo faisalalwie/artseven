@@ -11179,17 +11179,6 @@ header.masthead2 h1, header.masthead2 .h1 {
     padding-bottom: 0;
   }
 }
-@media (max-width: 426px) {
-  header.masthead3 {
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.6) 0%, rgba(92, 77, 66, 0.7) 100%), url("../assets/img/ABOUT\ US__.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    padding-top: 15rem;
-    padding-bottom: 0rem;
-  }
-}
 /*end add 12/07/2023*/
 
 /*start add*/
