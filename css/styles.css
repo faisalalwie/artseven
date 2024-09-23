@@ -11115,7 +11115,7 @@ header.masthead4 {
 header.masthead5 {
   padding-top: 20rem;
   padding-bottom: calc(15rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.1) 100%), url("../assets/img/VR WEB_.png");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.5) 100%), url("../assets/img/About_us.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11262,17 +11262,6 @@ header.masthead4 h1, header.masthead4 .h1 {
     padding-bottom: 0;
   }
 }
-@media (max-width: 426px) {
-  header.masthead5 {
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.4) 0%, rgba(92, 77, 66, 0.1) 100%), url("../assets/img/VR WEB__.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    padding-top: 20rem;
-    padding-bottom: 0rem;
-  }
-}/*end add 14/07/2023*/
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
