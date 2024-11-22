@@ -250,6 +250,20 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <div class="portfolio-box cursor" onclick="openModal(12);">
+                                                <img class="img-thumbnail2" src="assets/img/project/masjid/thumbnail/masjid al ridha.jpg" alt="..." />
+                                                <p><span class="h5">Masjid Al-Ridha</span></br>Sepang, Selangor</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 col-sm-12">
+                                            <div class="portfolio-box cursor" onclick="openModal(13);">
+                                                <img class="img-thumbnail2" src="assets/img/project/masjid/thumbnail/masjid bandar teknologi.jpg" alt="..." />
+                                                <p><span class="h5">Masjid Bandar Teknologi</span></br> Kajang, Selangor</p>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -458,6 +472,25 @@
                 <img class="demo" src="assets/img/project/masjid/masjid huda2.jpg" style="width:100%">
             </div>
         </div>
+        <!--MODAL MASJID AL RIDHA -->
+        <div id="myModal12" class="modalb">
+            <div class="modal-contentb">
+                <span class="closeb cursor" onclick="closeModal(12)">&times;</span>
+                <img class="demo1" src="assets/img/project/masjid/masjid  al ridha.jpg" style="width:100%">
+                <img class="demo" src="assets/img/project/masjid/masjid al ridha 2.jpg" style="width:100%">
+                <img class="demo" src="assets/img/project/masjid/masjid  al ridha 3.jpg" style="width:100%">
+                <img class="demo" src="assets/img/project/masjid/masjid  al ridha 4.jpg" style="width:100%">
+            </div>
+        </div>
+        <!--MODAL MASJID BANDAR TEKNOLOGI -->
+        <div id="myModal13" class="modalb">
+            <div class="modal-contentb">
+                <span class="closeb cursor" onclick="closeModal(13)">&times;</span>
+                <img class="demo1" src="assets/img/project/masjid/masjid bandar teknologi.jpg" style="width:100%">
+                <img class="demo" src="assets/img/project/masjid/masjid bandar teknologi 2.jpg" style="width:100%">
+                <img class="demo" src="assets/img/project/masjid/masjid bandar teknologi 3.JPG" style="width:100%">
+            </div>
+        </div>
 
         <!--SURAU-->
         <!--MODAL SURAU DARUL SALIM -->
@@ -587,6 +620,12 @@
               else if (n == 11) {
                 document.getElementById("myModal11").style.display = "block";
               }
+              else if (n == 12) {
+                document.getElementById("myModal12").style.display = "block";
+              }
+              else if (n == 13) {
+                document.getElementById("myModal13").style.display = "block";
+              }
             }
             function closeModal(n) {
               if (n == 1){
@@ -621,6 +660,12 @@
               }
               else if (n == 11) {
                 document.getElementById("myModal11").style.display = "none";
+              }
+              else if (n == 12) {
+                document.getElementById("myModal12").style.display = "none";
+              }
+              else if (n == 13) {
+                document.getElementById("myModal13").style.display = "none";
               }
             }
         </script>
